@@ -181,3 +181,5 @@ uploads/*
 .stylelintcache
 *.tgz
 .yarn-integrity
+
+/src/generated/prisma
