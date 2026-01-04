@@ -1,0 +1,183 @@
+# ========================================
+# PromptBox Backend - .gitignore
+# Node.js + Express + Prisma + TypeScript
+# ========================================
+
+# ----------------------------------------
+# Dependencies
+# ----------------------------------------
+node_modules/
+.pnp
+.pnp.js
+
+# ----------------------------------------
+# Build Output
+# ----------------------------------------
+dist/
+build/
+out/
+
+# ----------------------------------------
+# Environment Variables
+# ----------------------------------------
+.env
+.env.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+.env.production
+.env.production.local
+
+# Keep example env file
+!.env.example
+
+# ----------------------------------------
+# Prisma
+# ----------------------------------------
+# Prisma Client is generated, but we want it regenerated on install
+# Don't ignore prisma/schema.prisma - that should be committed
+
+# Prisma migrations are important - don't ignore them
+# prisma/migrations/ should be committed
+
+# SQLite database (if using for local dev)
+*.db
+*.db-journal
+prisma/*.db
+prisma/*.db-journal
+
+# ----------------------------------------
+# Logs
+# ----------------------------------------
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ----------------------------------------
+# Runtime & Cache
+# ----------------------------------------
+.cache/
+*.pid
+*.pid.lock
+*.seed
+
+# ----------------------------------------
+# Testing
+# ----------------------------------------
+coverage/
+.nyc_output/
+*.lcov
+
+# Jest
+jest.config.js.map
+
+# ----------------------------------------
+# TypeScript
+# ----------------------------------------
+*.tsbuildinfo
+tsconfig.tsbuildinfo
+
+# ----------------------------------------
+# IDE & Editors
+# ----------------------------------------
+# VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# JetBrains (WebStorm, etc.)
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*.swn
+*~
+
+# ----------------------------------------
+# OS Generated Files
+# ----------------------------------------
+# macOS
+.DS_Store
+.DS_Store?
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# ----------------------------------------
+# Docker (if used)
+# ----------------------------------------
+.docker/
+
+# ----------------------------------------
+# Debug
+# ----------------------------------------
+.node_inspect_*
+
+# ----------------------------------------
+# Temporary Files
+# ----------------------------------------
+tmp/
+temp/
+*.tmp
+*.temp
+
+# ----------------------------------------
+# Uploads (if storing locally)
+# ----------------------------------------
+uploads/*
+!uploads/.gitkeep
+
+# ----------------------------------------
+# Package Manager Locks
+# Choose one and ignore others
+# ----------------------------------------
+# If using npm, ignore yarn and pnpm locks
+# yarn.lock
+# pnpm-lock.yaml
+
+# If using yarn, ignore npm and pnpm locks
+# package-lock.json
+# pnpm-lock.yaml
+
+# If using pnpm, ignore npm and yarn locks
+# package-lock.json
+# yarn.lock
+
+# ----------------------------------------
+# Miscellaneous
+# ----------------------------------------
+*.bak
+*.backup
+.eslintcache
+.stylelintcache
+*.tgz
+.yarn-integrity
